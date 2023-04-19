@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cityhub Operation Platform</title>
+  <link rel="icon" href="./css/images/faviconV2.png" alt="LG favicon" />
+  <link rel="stylesheet" href="./css/landing.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css">
+  <script src="./js/owl.carousel.min.js"></script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+    integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <!-- landing -->
+  <script defer src="./js/landing.js"></script>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <img class="visual_simbol_L" src="./css/images/visual_simbol_L.png" alt="simbol L" />
+    <img class="visual_simbol_G" src="./css/images/visual_simbol_G.png" alt="simbol G" />
+    <div class="inner">
+      <div class="visual">
+        <div class="visual_text">
+          <h1>Cityhub Operation Platform</h1>
+          <h5>Cityhub Operation Platform은 데이터 수집, 모니터링, 제어, 분석, 액션 처리를 <br>
+            효과적으로 제공하는 운영 플랫폼입니다.</h5>
+        </div>
+        <div class="scroll">
+          <p class="active">Scroll Down</p>
+          <!-- MOUSE ACTIVE -->
+          <a><span></span><span></span><span></span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- SOLUTION SECTION -->
+  <section class="solution">
+    <div class="inner">
+      <h2 class="solution_title">
+        SOLUTIONS
+      </h2>
+      <div class="solution_box">
+        <!-- smart Enterprise -->
+        <div class="solution_cont cont1">
+          <div class="img_box">
+            <img src="./css/images/solution_enterprise.jpg" alt="smart Enterprise">
+          </div>
+          <div class="text_box">
+            <h3>Smart Enterprise</h3>
+            <p class="disc">Smart Connect로부터 수집된 데이터를 통합하여 제어/감시하는 엔진입니다.
+              분산처리 기능을 활용하여 단독 빌딩 뿐 아니라 여러 개 빌딩을 하나의 중앙센터에서
+              관리 할 수 있도록 구축함으로써 관리의 효율성을 향상시킬 수 있으며, 빌딩 뿐 아니라
+              공장 등의 서비스에도 적용하여 대량의 제어 감시 시스템을 구축할 수 있습니다. </p>
+          </div>
+        </div>
+        <!-- smart connect -->
+        <div class="solution_cont cont2">
+          <div class="img_box">
+            <img src="./css/images/solution_connect.jpg" alt="smart connect">
+          </div>
+          <div class="text_box">
+            <h3>Smart Connect</h3>
+            <p class="disc">디바이스로부터 관제점의 값을 모으고 제어하는 일종의 I/O 서버로써
+              다양한 디바이스들과 통신을 할 수 있습니다.
+              80종 이상의 표준 및 비 표준 프로토콜을 지원함으로써
+              디바이스 선택의 폭을 넓게 합니다.
+              또한 다양한 외부 시스템 연계에 필요한 커넥터를 제공합니다. </p>
+          </div>
+        </div>
+        <!-- smart builder -->
+        <div class="solution_cont cont3">
+          <div class="img_box">
+            <img src="./css/images/solution_builder.jpg" alt="smart builder">
+          </div>
+          <div class="text_box">
+            <h3>Smart Builder</h3>
+            <p class="disc">통합관제 실현을 위한 엔지니어링 도구의 일종으로 Device와 프로토콜
+              Profile 데이터 엔지니어링 및 화면 제작을 위한 저작 도구와 모니터링을 위한
+              Runtime 뷰어로 구성되어 있습니다. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="feature">
+    <div class="slider">
+      <div class="owl-carousel">
+        <div class="slider-card">
+          <div class="d-flex justify-content-center align-items-center mb-4">
+            <img src="./css/images/feature_img_1.png" alt="">
+            <div class="text_box">
+              <h4>어디서나 접근 가능</h4>
+              <h6>Web 기반으로 구현된 플랫폼으로써
+                  어디서나 사용이 가능하며, 모바일 기기를
+                  통한 운영이 가능합니다.</h6>
+            </div>
+          </div>
+        </div>
+        <div class="slider-card">
+          <div class="d-flex justify-content-center align-items-center mb-4">
+            <img src="./css/images/feature_img_2.png" alt="">
+            <div class="text_box">
+              <h4>대규모 처리 성능, 수평 확장 지원</h4>
+              <h6>Cityhub building 하나의 Node 당 300,000 Point 처리 성능을 지원합니다.
+                  또한 Scale Out 지원으로 대규모 사이트 및 서비스 연속성 측면에서 안정적인
+                  서비스 지원이 가능합니다. <br>
+                  &#40;Scale Out, 자체 Fault-Tolerance, 원격감시, Platform-Platform 지원&#41;
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="slider-card">
+          <div class="d-flex justify-content-center align-items-centert mb-4">
+            <img src="./css/images/feature_img_3.png" alt="">
+            <div class="text_box">
+              <h4>N point 운영 뷰어</h4>
+              <h6>사용자의 역할별 다양한 업무 형태에 따라 선택적으로 사용할 수 있는
+                  다양한 운영 뷰어를 제공함으로써 업무효율을 높일 수 있도록 지원합니다.
+                  &#40;HMI 운영 뷰어, Stream-Analytics 뷰어, Dashboard 뷰어&#41;
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="slider-card">
+          <div class="d-flex justify-content-center align-items-centert mb-4">
+            <img src="./css/images/feature_img_4.png" alt="">
+            <div class="text_box">
+              <h4>저렴한 구축 비용</h4>
+              <h6>별도 개발 없이 간단한 엔지니어링만으로 감시&#47;제어 시스템 구축이 가능하고 Ready-Made된
+                  운영뷰어 제공으로 효율성을 높일 수 있으며, 오픈소스 S/W 제품 지원으로 구축 비용을 절감할 수 있습니다.
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="slider-card">
+          <div class="d-flex justify-content-center align-items-centert mb-4">
+            <img src="./css/images/feature_img_5.png" alt="">
+            <div class="text_box">
+              <h4>Big-Data Bridge</h4>
+              <h6>No-SQL 기반의 History Data 관리로 Big-Data 기술과 결합을 손쉽게 지원합니다.
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="slider-card">
+          <div class="d-flex justify-content-center align-items-centert mb-4">
+            <img src="./css/images/feature_img_6.png" alt="">
+            <div class="text_box">
+              <h4>통합된 업무처리 절차</h4>
+              <h6>제어, 모니터링, 경보처리, SOP&#40;Standard Operation Procedure&#41; 등
+                  통합 된 업무처리를 지원합니다.
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="slider-card">
+          <div class="d-flex justify-content-center align-items-centert mb-4">
+            <img src="./css/images/feature_img_7.png" alt="">
+            <div class="text_box">
+              <h4>다양한 프로토콜 Adapter</h4>
+              <h6>10여종의 표준, 비표준 디바이스 Adapter를 보유하고 있습니다.
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="slider-card">
+          <div class="d-flex justify-content-center align-items-centert mb-4">
+            <img src="./css/images/feature_img_8.png" alt="">
+            <div class="text_box">
+              <h4>80+ Reference</h4>
+              <h6>단독빌딩, 복합빌딩, 원격감시, 군감리, 공장, 전력, 에너지 등 다양한 도메인 영역에서
+                  80개 이상의 Reference를 보유하고 있습니다.
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- POINT -->
+  <section class="point one">
+    <div class="inner">
+      <div class="title_box">
+        <h2>3-way 확장이 가능한 플랫폼</h2>
+        <h6>시장의 Needs에 따라 3가지 영역에서 손쉽게 확장할 수 있는 기능을 제공하고 있습니다.</h6>
+      </div>
+      <div class="point_cont">
+        <div class="cont_box">
+          <img src="./css/images/point_icon1.gif" alt="connet gif">
+          <h4>Any Device</h4>
+          <h4>Easy to Connect</h4>
+          <P class="disc">Smart Connect를 통해 다양한 디바이스 별 어댑터를 지원합니다. 새로운 프로토콜이나 디바이스 추가 시 별도의 서비스 수정 없이 어댑터만 추가하여 사용할 수
+            있습니다.</P>
+        </div>
+
+        <div class="cont_box">
+          <img src="./css/images/point_icon2.gif" alt="expand gif">
+          <h4>Any Domain</h4>
+          <h4>Easy to Expand</h4>
+          <P class="disc">빌딩 뿐 아니라 데이터센터, 공장, 에너지, 도메인 등 다양한 디바이스가 산재되어 있는 사업 영역에서도 적용 가능합니다.</P>
+        </div>
+
+        <div class="cont_box">
+          <img src="./css/images/point_icon3.gif" alt="build gif">
+          <h4>Any Service</h4>
+          <h4>Easy to Build</h4>
+          <P class="disc">시장의 Needs에 따라 고객에 필요한 서비스를 추가하기 용이하여 사용자 요구사항에 맞는 최적화된 시스템을 편리하게 구현할 수 있습니다.</P>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="point two">
+    <div class="inner">
+      <div class="title_box">
+        <h2>다양한 방식의 시스템 구성 지원</h2>
+        <h6>고객의 업무 특성에 맞는 다양한 시스템 구성을 지원함으로써 고객의 운영 환경에 최적화된 시스템 구성이 가능합니다.</h5>
+      </div>
+      <img src="./css/images/system_table.jpg" alt="system table">
+    </div>
+  </section>
+  <section class="point three">
+    <div class="inner">
+      <div class="title_box">
+        <h2>혁신적인 데이터 처리 효율</h2>
+        <h6>SGP-RLE-Data(Run Learning Encoding / Decoding for Data) 알고리즘을 적용하여 데이터 압축 저장/추출 관리함으로써 대량의 이력 데이터도 효율적으로
+          처리합니다.</h6>
+        <h6>SGP-RLE_Tx(Run Learning Encoding / Decoding for Transaction) 프로세싱 알고리즘을 적용하여 Things 데이터 처리 측면에서 혁신적인 처리 효율을
+          제공합니다.</h6>
+      </div>
+      <img src="./css/images/data_table.jpg" alt="system table">
+    </div>
+  </section>
+  <section class="point four">
+    <div class="inner">
+      <div class="title_box">
+        <h2>웹 기반 통합 운영 플랫폼</h2>
+        <h6>Device Profiling - 데이터 외부 전파까지 End-To-End 운영이 가능합니다.</h6>
+        <h6>대용량 관제 데이터 처리 및 사용자 역할에 최적화 된 운영 뷰어를 제공합니다.</h6>
+      </div>
+      <img src="./css/images/platform_table.jpg" alt="system table">
+      <div class="table_box">
+        <table class="platform_table">
+          <thead>
+            <tr>
+              <th>구분</th>
+              <th>세부 내용</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Smart Viewer</td>
+              <td>
+                <p class="td_bold">Cityhub Building에서 제공하고 있는 사용자 운영을 위한 Viewer</p>
+                <p class="td_sub">- HMI Viewer, Dashboard, Stream-Analytics, Mobile Monitoring </p>
+              </td>
+            </tr>
+            <tr>
+              <td>Device Profiling</td>
+              <td>
+                <p class="td_bold">Device 관리 및 통신에 필요한 프로토콜 유형 등 엔지니어링 설정 영역</p>
+                <p class="td_sub">- 제어 네트워크 설정, 디바이스 정보, 관제 Point 정보 설정, 통신 설정</p>
+              </td>
+            </tr>
+            <tr>
+              <td>View Drawing</td>
+              <td>
+                <p class="td_bold">그래픽 기반의 사용자 화면 Drawing을 위한 엔지니어링 영역</p>
+                <p class="td_sub">- 화면 객체 생성, 화면 효과 처리, 화면 모델링, 화면 Rendering</p>
+              </td>
+            </tr>
+            <tr>
+              <td>데이터 수집</td>
+              <td>
+                <p class="td_bold">Device와의 통신을 통한 수집 영역</p>
+                <p class="td_sub">- 수집 데이터 저장, 수집 주기 관리, 최종 상태값 관리, 통신 Packet Handling</p>
+              </td>
+            </tr>
+            <tr>
+              <td>운영</td>
+              <td>
+                <p class="td_bold">모니터링, 제어, 이벤트, 전파, 액션에 대한 사용자 처리 영역</p>
+                <p class="td_sub">- SOP, Mobile APP, 작업자 안전 지원 기능 포함</p>
+              </td>
+            </tr>
+            <tr>
+              <td>모니터링</td>
+              <td>
+                <p class="td_bold">Cityhub Building에서 제공하는 Viewer를 위한 모니터링 영역</p>
+                <p class="td_sub">- 네트워크/디바이스 상태 모니터링, Point 값, 트렌드, 알람 모니터링</p>
+              </td>
+            </tr>
+            <tr>
+              <td>전파</td>
+              <td>
+                <p class="td_bold">외부 시스템, 사용자 등에게 정보를 전달하는 영역</p>
+                <p class="td_sub">- Massage Norification/Routing, 전파 채널 설정, 전파 대상 세션 관리</p>
+              </td>
+            </tr>
+            <tr>
+              <td>제어</td>
+              <td>
+                <p class="td_bold">Device와의 프로토콜 통신을 위한 제어 영역</p>
+                <p class="td_sub">- 제어 스케줄 관리, 제어 그룹 관리, 제어 명령 실행 관리, User Script 실행</p>
+              </td>
+            </tr>
+            <tr>
+              <td>BASIS</td>
+              <td>
+                <p class="td_bold">사용자 관리, 권한 관리, 시스템 관리, 웹 기반의 History 검색 영역</p>
+                <p class="td_sub">- User/Role Management, System Management</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Tools</td>
+              <td>
+                <p class="td_bold">Cityhub Building에서 제공하고 있는 Tools</p>
+                <p class="td_sub">- HMI-UI Builder, Engineering Tool, SC Agent, Mobile Hybrid-Web</p>
+              </td>
+            </tr>
+          </tbody>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+  <section class="point five">
+    <div class="inner">
+      <div class="title_box">
+        <h2>버전 정보</h2>
+      </div>
+      <div class="version_area">
+        <div class="version_box">
+          <h4>Version 1.0.0</h4>
+          <p>버전 노트에 대한 간단한 설명입니다.</p>
+          <p>버전 노트에 대한 간단한 설명입니다.</p>
+          <p class="date">2023.03.30</p>
+        </div>
+        <div class="version_box">
+          <h4>Version 1.0.0</h4>
+          <p>버전 노트에 대한 간단한 설명입니다.</p>
+          <p>버전 노트에 대한 간단한 설명입니다.</p>
+          <p class="date">2023.03.30</p>
+        </div>
+        <div class="version_box">
+          <h4>Version 1.0.0</h4>
+          <p>버전 노트에 대한 간단한 설명입니다.</p>
+          <p>버전 노트에 대한 간단한 설명입니다.</p>
+          <p class="date">2023.03.30</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="point six">
+    <div class="inner">
+      <div class="title_box">
+        <h2>제품 스펙</h2>
+      </div>
+      <div class="container">
+        <ul class="tab-container">
+          <li class="tab-container__item active" data-tab="tab1">
+            <a class="tab-container__item--title" href="#tab1">Devie Profile</a>
+          </li>
+          <li class="tab-container__item" data-tab="tab2">
+            <a class="tab-container__item--title" href="#tab1">수집</a>
+          </li>
+          <li class="tab-container__item" data-tab="tab3">
+            <a class="tab-container__item--title" href="#tab1">모니터링</a>
+          </li>
+          <li class="tab-container__item" data-tab="tab4">
+            <a class="tab-container__item--title" href="#tab1">메시지 전파</a>
+          </li>
+          <li class="tab-container__item" data-tab="tab5">
+            <a class="tab-container__item--title" href="#tab1">제어</a>
+          </li>
+          <li class="tab-container__item" data-tab="tab6">
+            <a class="tab-container__item--title" href="#tab1">운영</a>
+          </li>
+          <li class="tab-container__item" data-tab="tab7">
+            <a class="tab-container__item--title" href="#tab1">Service 확장</a>
+          </li>
+          <li class="tab-container__item" data-tab="tab8">
+            <a class="tab-container__item--title" href="#tab1">Foundation(1/2)</a>
+          </li>
+          <li class="tab-container__item" data-tab="tab9">
+            <a class="tab-container__item--title" href="#tab1">Foundation(2/2)</a>
+          </li>
+          <li class="tab-container__item" data-tab="tab10">
+            <a class="tab-container__item--title" href="#tab1">BASIS</a>
+          </li>
+          <li class="tab-container__item" data-tab="tab11">
+            <a class="tab-container__item--title" href="#tab1">Point 개수 별 참조사양</a>
+          </li>
+          <li class="tab-container__item" data-tab="tab12">
+            <a class="tab-container__item--title" href="#tab1">Client 환경 </a>
+          </li>
+        </ul>
+        <section class="content-container">
+          <article id="tab1" class="content-container__content target">
+            <div class="table_box">
+              <table class="platform_table">
+                <tbody>
+                  <tr>
+                    <td class="table_sect" rowspan="2">네트워크&#47;디바이스 관리</td>
+                    <td class="table_data">네트워크&#47;디바이스 기본 관리</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">네트워크&#47;디바이스 고급 관리</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect">관제 Point 관리</td>
+                    <td class="table_data">관제 Point 관리</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+          <article id="tab2" class="content-container__content">
+            <div class="table_box">
+              <table class="platform_table">
+                <tbody>
+                  <tr>
+                    <td class="table_sect" rowspan="9">데이터 수집&#40;CA&#41;</td>
+                    <td class="table_data">TAG 공통&#40;CAA&#41;</td>
+                    <td class="table_data">Improved</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Digital TAG형 데이터 수집</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Analog TAG형 데이터 수집</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">String TAG형 데이터 수집</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Log형 데이터 수집</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">FR TAG형 데이터 수집</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Struct Type Point 데이터 수집</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">가상 TAG형</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">내부 TAG&#40;Digital, Analog, String&#41;</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect" rowspan="4">데이터 관리</td>
+                    <td class="table_data">변환</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Calculation</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">User Script 수식</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Quality code&#40;flag&#41;</td>
+                    <td class="table_data"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+          <article id="tab3" class="content-container__content">
+            <div class="table_box">
+              <table class="platform_table">
+                <tbody>
+                  <tr>
+                    <td class="table_sect" rowspan="3">네트워크/디바이스 상태</td>
+                    <td class="table_data">Device별 상태 관리</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Node 통신상태</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Device QoS</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect" rowspan="4">Point 모니터링</td>
+                    <td class="table_data">Single Point 모니터링</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">다중 값 Point 모니터링</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">LOG형 Point 모니터링</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">SOE Point 모니터링</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect" rowspan="4">트렌드 데이터</td>
+                    <td class="table_data">트렌드 데이터 관리</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">FAST Log 트렌드 콤퍼넌트</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">표준 트렌드 콤퍼넌트</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">이력 트렌드 데이터 조회</td>
+                    <td class="table_data">Improved</td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect">Alarm</td>
+                    <td class="table_data">Alarm 엔진</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect" rowspan="2">User View Manager</td>
+                    <td class="table_data">Viewer 엔진</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Tool Bar</td>
+                    <td class="table_data"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+          <article id="tab4" class="content-container__content">
+            <div class="table_box">
+              <table class="platform_table">
+                <tbody>
+                  <tr>
+                    <td class="table_sect" rowspan="3">Notification</td>
+                    <td class="table_data">기준 정보 전파</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Point 값&#47;알람 추천(Socket)</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Point 값&#47;알람 추천(Web Socket)</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect">Data Retrieve</td>
+                    <td class="table_data">Point 값&#47;알람 추출</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect">SMS 전파</td>
+                    <td class="table_data">메시지 전송</td>
+                    <td class="table_data"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+          <article id="tab5" class="content-container__content">
+            <div class="table_box">
+              <table class="platform_table">
+                <tbody>
+                  <tr>
+                    <td class="table_sect">제어 스케줄 관리</td>
+                    <td class="table_data">제어 스케줄 관리</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect">스크립트 엔진</td>
+                    <td class="table_data">스크립트 관리</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect">단순 제어</td>
+                    <td class="table_data">Single Point 제어</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect" rowspan="6">고급 제어</td>
+                    <td class="table_data">다중 값 Point 제어</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">일괄 제어</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">SBO&#47;SCBO</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Pulse 제어</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Two-State Point 제어</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Three-State Point 제어</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+          <article id="tab6" class="content-container__content">
+            <div class="table_box">
+              <table class="platform_table">
+                <tbody>
+                  <tr>
+                    <td class="table_sect" rowspan="6">Smart Viewer</td>
+                    <td class="table_data">HMI Viewer&#40;Web-Embeded&#41;</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">HMI Viewer&#40;Standalone&#41;</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Dashboard</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Statistics</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">System Admin</td>
+                    <td class="table_data">Improved</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Mobile App&#40;Hybrid Web&#41;</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect">단순 제어</td>
+                    <td class="table_data">Pulse 제어</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect">SOP</td>
+                    <td class="table_data">SOP&#40;Standard Operation Precedure&#41;</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect" rowspan="2">지원 가능</td>
+                    <td class="table_data">작업지원가능</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">사고 재현&#40;Event Playback&#41;</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect">운영 Manager</td>
+                    <td class="table_data">수집 Action Flow</td>
+                    <td class="table_data"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+          <article id="tab7" class="content-container__content">
+            <div class="table_box">
+              <table class="platform_table">
+                <tbody>
+                  <tr>
+                    <td class="table_sect" rowspan="3">Reporting</td>
+                    <td class="table_data">Report용 데이터 추출</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">사용량 데이터 수집</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">사용량 데이터 표출</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect" rowspan="3">Steam Analyics</td>
+                    <td class="table_data">기본 모델&#40;MIN &#47; MAX &#47; 평균 &#47; 분산&#41;</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">자기회귀누적이동평균모델&#40;ARIMA&#41; 분석</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">다중상관분석</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect" rowspan="2">Dashboard</td>
+                    <td class="table_data">대시보드 Frame</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Dashboard 위젯</td>
+                    <td class="table_data"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+          <article id="tab8" class="content-container__content">
+            <div class="table_box">
+              <table class="platform_table">
+                <tbody>
+                  <tr>
+                    <td class="table_sect" rowspan="5">Security</td>
+                    <td class="table_data">User Manager</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Access Manager</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">HMI View</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">로그인 Password</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">암호화</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect" rowspan="2">Intergration</td>
+                    <td class="table_data">External API&#58; 00종</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">OS &#58; Window, Linux, AIX</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect" rowspan="2">OS, DB 호환성</td>
+                    <td class="table_data">DBMS&#58; Oracle, MS-SQL, PostgreSQL</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">WAS&#58; Any One</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect" rowspan="3">Data Repository</td>
+                    <td class="table_data">Master DB&#58; RDBMS</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">History DB&#58; Cassandra</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Memoryory DB&#58; Ehcache or Redis</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+          <article id="tab7" class="content-container__content">
+            <div class="table_box">
+              <table class="platform_table">
+                <tbody>
+                  <tr>
+                    <td class="table_sect" rowspan="3">Reporting</td>
+                    <td class="table_data">Report용 데이터 추출</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">사용량 데이터 수집</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">사용량 데이터 표출</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect" rowspan="3">Steam Analyics</td>
+                    <td class="table_data">기본 모델(MIN &#47; MAX &#47; 평균 &#47; 분산)</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">자기회귀누적이동평균모델(ARIMA) 분석</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">다중상관분석</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect" rowspan="2">Dashboard</td>
+                    <td class="table_data">대시보드 Frame</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Dashboard 위젯</td>
+                    <td class="table_data"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+          <article id="tab9" class="content-container__content">
+            <div class="table_box">
+              <table class="platform_table">
+                <tbody>
+                  <tr>
+                    <td class="table_sect" rowspan="5">성능</td>
+                    <td class="table_data">처리규모&#58; 300,000Point</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Scanning 주기&#58; 1Sec 이내</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">표출응답&#58; 1Sec 이내</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">제어전송&#58; 1Sec 이내</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">화면 반응속도&#58; 3Sec 이내</td>
+                    <td class="table_data">Improved</td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect" rowspan="5">안정성</td>
+                    <td class="table_data">시스템 복구성(일부)</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">시스템 복구성(전체)</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">서비스 연속성(Active-Standby)</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">서비스 연속성(FT)</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Node Line Check</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect" rowspan="3">확장성</td>
+                    <td class="table_data">단일 Node 구성</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Node Clustering 구성</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Platform - Platform</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect" rowspan="2">데이터 전송 보장</td>
+                    <td class="table_data">Message Push</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">SC Message 전송 보장</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect" rowspan="2">HOT Deploy</td>
+                    <td class="table_data">Adapter Bundle</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Device Profile</td>
+                    <td class="table_data"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+          <article id="tab10" class="content-container__content">
+            <div class="table_box">
+              <table class="platform_table">
+                <tbody>
+                  <tr>
+                    <td class="table_sect" rowspan="2">사용자 관리</td>
+                    <td class="table_data">사용자 프로필</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">사용자 그룹</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <td class="table_sect" rowspan="7">Security</td>
+                  <td class="table_data">Role 관리</td>
+                  <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">Permission</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">객체 유형</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">웹 화면 권한</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">빌더&#47;Viewer 화면 권한</td>
+                    <td class="table_data">New</td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">접속 이력</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">API 계정관리</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect" rowspan="5">리소스 관리</td>
+                    <td class="table_data">메뉴 구성</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">코드</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">다국어</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">알림음</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">아이콘</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect" rowspan="4">HMI 웹</td>
+                    <td class="table_data">스케줄</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">보고서</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">이력조회</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">TAG 관리</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect" rowspan="2">시스템 관리</td>
+                    <td class="table_data">게시판</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_data">SMS</td>
+                    <td class="table_data"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+          <article id="tab11" class="content-container__content">
+            <div class="table_box">
+              <table class="platform_table">
+                <thead>
+                  <tr>
+                    <th class="point_th">구분</th>
+                    <th class="point_th" colspan="2">항목</th>
+                    <th class="point_th">3,000이하</th>
+                    <th class="point_th">3,000 ~ 15,000</th>
+                    <th class="point_th">15,000 ~ 50,000</th>
+                    <th class="point_th">50,000 ~ 100,000</th>
+                    <th class="point_th">100,000 ~ 300,000</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="point_td" rowspan="9">HW 규격</td>
+                    <td class="point_td" rowspan="3">AP</td>
+                    <td class="point_td">CPU</td>
+                    <td class="point_td">Xeon 6 Core 1</td>
+                    <td class="point_td">Xeon 6 Core 2</td>
+                    <td class="point_td">Xeon 6 Core 2</td>
+                    <td class="point_td">Xeon 6 Cre 2</td>
+                    <td class="point_td">Xeon 8 Core 4</td>
+                  </tr>
+                  <tr>
+                    <td class="point_td">Memory</td>
+                    <td class="point_td">16GB</td>
+                    <td class="point_td">16GB</td>
+                    <td class="point_td">24GB</td>
+                    <td class="point_td">32GB</td>
+                    <td class="point_td">48GB</td>
+                  </tr>
+                  <tr>
+                    <td class="point_td">HDD</td>
+                    <td class="point_td">1.2TB</td>
+                    <td class="point_td">1.2TB</td>
+                    <td class="point_td">2TB 이상</td>
+                    <td class="point_td">5TB 이상</td>
+                    <td class="point_td">10TB 이상</td>
+                  </tr>
+                  <tr>
+                    <td class="point_td" rowspan="3">DB</td>
+                    <td class="point_td">CPU</td>
+                    <td class="point_td" rowspan="3">AP 서버에 탑재</td>
+                    <td class="point_td" rowspan="3">AP 서버에 탑재</td>
+                    <td class="point_td">Xeon 6 Core 1</td>
+                    <td class="point_td">Xeon 6 Core 1</td>
+                    <td class="point_td">Xeon 6 Core 1</td>
+                  </tr>
+                  <tr>
+                    <td class="point_td">Memory</td>
+                    <td class="point_td">16GB</td>
+                    <td class="point_td">16GB</td>
+                    <td class="point_td">24GB</td>
+                  </tr>
+                  <tr>
+                    <td class="point_td">HDD</td>
+                    <td class="point_td">2TB 이상</td>
+                    <td class="point_td">2TB 이상</td>
+                    <td class="point_td">3TB 이상</td>
+                  </tr>
+                  <tr>
+                    <td class="point_td" rowspan="3">I/O</td>
+                    <td class="point_td">CPU</td>
+                    <td class="point_td" rowspan="3">AP 서버에 탑재</td>
+                    <td class="point_td">Xeon 6 Core 1</td>
+                    <td class="point_td">Xeon 6 Core 1</td>
+                    <td class="point_td">Xeon 6 Core 1</td>
+                    <td class="point_td">Xeon 6 Core 1</td>
+                  </tr>
+                  <tr>
+                    <td class="point_td">Memory</td>
+                    <td class="point_td">8GB</td>
+                    <td class="point_td">12GB</td>
+                    <td class="point_td">12GB</td>
+                    <td class="point_td">16GB</td>
+                  </tr>
+                  <tr>
+                    <td class="point_td">HDD</td>
+                    <td class="point_td">1.2TB</td>
+                    <td class="point_td">1.2TB</td>
+                    <td class="point_td">1.2TB</td>
+                    <td class="point_td">2TB 이상</td>
+                  </tr>
+                  <tr>
+                    <td class="point_td" rowspan="3">SW 규격</td>
+                    <td class="point_td" colspan="2">OS</td>
+                    <td class="point_td">Win Server Std. 2012 이상</td>
+                    <td class="point_td">Win Server Std. 2012 이상</td>
+                    <td class="point_td">Win Server Std. 2012 이상</td>
+                    <td class="point_td">Win Server Std. 2012 이상</td>
+                    <td class="point_td">Win Server Std. 2012 이상</td>
+                  </tr>
+                  <tr>
+                    <td class="point_td" colspan="2">WAS</td>
+                    <td class="point_td">Tomcart 8.5.4 이상</td>
+                    <td class="point_td">Tomcart 8.5.4 이상</td>
+                    <td class="point_td">Tomcart 8.5.4 이상, Weblogic 11g Std., Jeus 6.0 이상</td>
+                    <td class="point_td">Tomcart 8.5.4 이상, Weblogic 11g Std., Jeus 6.0 이상</td>
+                    <td class="point_td">Tomcart 8.5.4 이상, Weblogic 11g Std., Jeus 6.0 이상</td>
+                  </tr>
+                  <tr>
+                    <td class="point_td" colspan="2">DBMS</td>
+                    <td class="point_td">MS-SQL 2012 Std.</td>
+                    <td class="point_td">MS-SQL 2012 Std.</td>
+                    <td class="point_td">MS-SQL 2012 Std.</td>
+                    <td class="point_td">MS-SQL 2012 Std.</td>
+                    <td class="point_td">MS-SQL 2012 Std.</td>
+                  </tr>
+                  <tr>
+                    <td class="point_td" rowspan="4">HW 참조모델</td>
+                    <td class="point_td" rowspan="2">HP</td>
+                    <td class="point_td">렉타입</td>
+                    <td class="point_td"></td>
+                    <td class="point_td">DL380G7</td>
+                    <td class="point_td">DL380G7</td>
+                    <td class="point_td">DL380G7</td>
+                    <td class="point_td">DL580GB</td>
+                  </tr>
+                  <tr>
+                    <td class="point_td">타워형</td>
+                    <td class="point_td">Z600</td>
+                    <td class="point_td">ML350T06</td>
+                    <td class="point_td"></td>
+                    <td class="point_td"></td>
+                    <td class="point_td"></td>
+                  </tr>
+                  <tr>
+                    <td class="point_td" rowspan="2">IBM</td>
+                    <td class="point_td">렉타입</td>
+                    <td class="point_td"></td>
+                    <td class="point_td">x3650M3</td>
+                    <td class="point_td">x3650M3</td>
+                    <td class="point_td">x3650M3</td>
+                    <td class="point_td">x3850X5</td>
+                  </tr>
+                  <tr>
+                    <td class="point_td">타워형</td>
+                    <td class="point_td"></td>
+                    <td class="point_td">x3500</td>
+                    <td class="point_td"></td>
+                    <td class="point_td"></td>
+                    <td class="point_td"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="table_disc">※ Spec 산정 기준 : 단일 노드, 백업/복구 고려하지 않음</p>
+            </div>
+          </article>
+          <article id="tab12" class="content-container__content">
+            <div class="table_box">
+              <table class="platform_table">
+                <tbody>
+                  <tr>
+                    <td class="table_sect"">OS</td>
+                    <td class=" table_data">Windows 7</td>
+                    <td class="table_data">64bits</td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect"">RAM</td>
+                    <td class=" table_data">4GB 이상</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect"">HDD</td>
+                    <td class=" table_data">100GB 이상</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect"">지원 브라우저</td>
+                    <td class=" table_data">Internet Explorer 11</td>
+                    <td class="table_data"></td>
+                  </tr>
+                  <tr>
+                    <td class="table_sect"">JRE</td>
+                    <td class=" table_data">1.8.0 이상</td>
+                    <td class="table_data">32bits</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="table_disc">※ User Viewer 관련 JVM 실행 시 1024MB 이상 메모리 할당 필요</p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer>
+    <div class="inner">
+      <div class="footer_layout">
+        <div class="text_box">
+          <dl>
+            <dt>주소</dt>
+            <dd>서울특별시 강서구 양천로 570 8층 LG CNS</dd>
+            <dt>전화</dt>
+            <dd>(02) 2099-0659</dd>
+            <dt>메일</dt>
+            <dd>sgpinfo@lgcns.com</dd>
+          </dl>
+          <dl>
+            <dt></dt>
+            <dd></dd>
+            <dt>팩스</dt>
+            <dd>(02) 2099-0099</dd>
+            <dt>홈페이지</dt>
+            <dd>www.lgcns.com &#47; www.lgcns.co.kr/solution/smartcity</dd>
+          </dl>
+        </div>
+        <div class="logo_box">
+          <img src="./css/images/lgcns_logo.png" alt="LGCNS logo">
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>0
