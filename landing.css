@@ -145,7 +145,7 @@ header .inner .visual .visual_text {
   color: #fff;
   position: relative;
   top: 250px;
-  transform: translateX(-40px);
+  transform: translateX(-60px);
 }
 
 header .inner .visual .visual_text h1 {
@@ -199,7 +199,7 @@ header .inner .visual .scroll a span::before {
 .solution {
   height: 1876px;
   color: #000;
-  background-image: linear-gradient(to right bottom, #f9f9f9, #e9e9e9, #dadada, #cacaca, #bbbbbb);
+  /* background-image: linear-gradient(to right bottom, #f9f9f9, #e9e9e9, #dadada, #cacaca, #bbbbbb); */
 }
 
 .solution .inner .solution_title {
@@ -241,11 +241,13 @@ header .inner .visual .scroll a span::before {
   height: 488px;
   position: relative;
   overflow: hidden;
+  border-radius: 32px;
 }
 
 .solution .inner .solution_box .solution_cont .img_box img {
   width: 100%;
   transition: 0.2s all ease-in-out;
+  border-radius: inherit;
 }
 
 .solution .inner .solution_box .solution_cont .img_box:hover img {
@@ -267,7 +269,7 @@ header .inner .visual .scroll a span::before {
   height: 900px;
   position: relative;
   color: #000;
-  background-color: #eee;  
+  background-color: #e1e1e1;
 }
 
 .slider .owl-item.active.center .slider-card {
@@ -696,3 +698,41 @@ footer .footer_layout .logo_box {
 footer .footer_layout .logo_box img {
   vertical-align: middle;
 }
+
+.badges {
+  opacity: 0;
+}
+.badges .badge.to-top {
+  width: 48px;
+  height: 48px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #666;
+  border-radius: 80px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 180px;
+  right: 100px;
+  z-index: 9;
+}
+
+.badges .badge.to-home {
+  width: 48px;
+  height: 48px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #666;
+  border-radius: 80px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 124px;
+  right: 100px;
+  z-index: 9;
+}
+

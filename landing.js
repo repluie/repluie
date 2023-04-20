@@ -18,6 +18,8 @@ $(document).ready(function () {
     center: true,
     smartspeed: 500,
     nav: true,
+    // autoplay:true,
+    // autoplayTimeout: 5000,
     responsive: {
       0: {
         items: 1,
@@ -131,4 +133,31 @@ gsap.to(".point.four img", {
     trigger: ".point.four",
     toggleActions: "restart pause resume none",
   },
+});
+
+// top and home badges
+const badgeEl = document.querySelector('.badges');
+
+window.addEventListener('scroll', _.throttle(function () {
+  console.log(window.scrollY);
+  if (window.scrollY > 500) {
+    gsap.to (badgeEl, .4, {
+      opacity: 1,
+      display: 'block'
+    });
+  } else {
+    gsap.to (badgeEl, .4, {
+      opacity: 0,
+      display: 'none'
+    });
+  }
+}, 300));
+
+// move to TOP
+const toTopEl = document.querySelector('.badge.to-top');
+toTopEl.addEventListener('click', function () {
+  gsap.to(window, .2, {
+    scrollTo: 0
+  });
+
 });

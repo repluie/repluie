@@ -9,6 +9,8 @@
   <link rel="icon" href="./css/images/faviconV2.png" alt="LG favicon" />
   <link rel="stylesheet" href="./css/landing.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- material icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <!-- Owl Carousel -->
   <link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css">
   <script src="./js/owl.carousel.min.js"></script>
@@ -16,13 +18,21 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
     integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- scroll -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"
+    integrity="sha512-WFeBxQtM/n6U8/Nd0Hz/Hq7n75NImbzM7Kc0y/4kE0kHnH1Be+nzm32RwbGoDsW1D9fjjPvI8LIWxLrZhxew/w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- lodash -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+    integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- landing -->
   <script defer src="./js/landing.js"></script>
 
 <body>
   <!-- HEADER -->
-  <header>
+  <header id="#main">
     <img class="visual_simbol_L" src="./css/images/visual_simbol_L.png" alt="simbol L" />
     <img class="visual_simbol_G" src="./css/images/visual_simbol_G.png" alt="simbol G" />
     <div class="inner">
@@ -89,7 +99,7 @@
       </div>
     </div>
   </section>
-  <section id="feature">
+  <section class="feature">
     <div class="slider">
       <div class="owl-carousel">
         <div class="slider-card">
@@ -98,8 +108,8 @@
             <div class="text_box">
               <h4>어디서나 접근 가능</h4>
               <h6>Web 기반으로 구현된 플랫폼으로써
-                  어디서나 사용이 가능하며, 모바일 기기를
-                  통한 운영이 가능합니다.</h6>
+                어디서나 사용이 가능하며, 모바일 기기를
+                통한 운영이 가능합니다.</h6>
             </div>
           </div>
         </div>
@@ -109,9 +119,9 @@
             <div class="text_box">
               <h4>대규모 처리 성능, 수평 확장 지원</h4>
               <h6>Cityhub building 하나의 Node 당 300,000 Point 처리 성능을 지원합니다.
-                  또한 Scale Out 지원으로 대규모 사이트 및 서비스 연속성 측면에서 안정적인
-                  서비스 지원이 가능합니다. <br>
-                  &#40;Scale Out, 자체 Fault-Tolerance, 원격감시, Platform-Platform 지원&#41;
+                또한 Scale Out 지원으로 대규모 사이트 및 서비스 연속성 측면에서 안정적인
+                서비스 지원이 가능합니다. <br>
+                &#40;Scale Out 지원, 자체 Fault-Tolerance 지원, 원격감시 및 Platform-Platform 지원&#41;
               </h6>
             </div>
           </div>
@@ -122,8 +132,8 @@
             <div class="text_box">
               <h4>N point 운영 뷰어</h4>
               <h6>사용자의 역할별 다양한 업무 형태에 따라 선택적으로 사용할 수 있는
-                  다양한 운영 뷰어를 제공함으로써 업무효율을 높일 수 있도록 지원합니다.
-                  &#40;HMI 운영 뷰어, Stream-Analytics 뷰어, Dashboard 뷰어&#41;
+                다양한 운영 뷰어를 제공함으로써 업무효율을 높일 수 있도록 지원합니다.
+                &#40;HMI 운영 뷰어, Stream-Analytics 뷰어, Dashboard 뷰어&#41;
               </h6>
             </div>
           </div>
@@ -134,7 +144,7 @@
             <div class="text_box">
               <h4>저렴한 구축 비용</h4>
               <h6>별도 개발 없이 간단한 엔지니어링만으로 감시&#47;제어 시스템 구축이 가능하고 Ready-Made된
-                  운영뷰어 제공으로 효율성을 높일 수 있으며, 오픈소스 S/W 제품 지원으로 구축 비용을 절감할 수 있습니다.
+                운영뷰어 제공으로 효율성을 높일 수 있으며, 오픈소스 S/W 제품 지원으로 구축 비용을 절감할 수 있습니다.
               </h6>
             </div>
           </div>
@@ -155,7 +165,7 @@
             <div class="text_box">
               <h4>통합된 업무처리 절차</h4>
               <h6>제어, 모니터링, 경보처리, SOP&#40;Standard Operation Procedure&#41; 등
-                  통합 된 업무처리를 지원합니다.
+                통합 된 업무처리를 지원합니다.
               </h6>
             </div>
           </div>
@@ -176,7 +186,7 @@
             <div class="text_box">
               <h4>80+ Reference</h4>
               <h6>단독빌딩, 복합빌딩, 원격감시, 군감리, 공장, 전력, 에너지 등 다양한 도메인 영역에서
-                  80개 이상의 Reference를 보유하고 있습니다.
+                80개 이상의 Reference를 보유하고 있습니다.
               </h6>
             </div>
           </div>
@@ -1227,6 +1237,15 @@
       </div>
     </div>
   </footer>
+  <!-- badges -->
+  <div class="badges">
+    <div class="badge to-top">
+      <div class="material-icons">arrow_upward</div>
+    </div>
+    <div class="badge to-home" OnClick="location.href ='http://34.64.218.171/login.do'" style="cursor:pointer;" >
+      <div class="material-icons">home</div>
+    </div>
+  </div>
 </body>
 
-</html>0
+</html>
